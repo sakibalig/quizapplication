@@ -36,7 +36,7 @@ const Mobilenav = () => {
     }
     const logout = async()=>{
 
-        const response = await axios.get("http://localhost:8000/api/v1/user/logout",{withCredentials:true});
+        const response = await axios.get("https://quizapplication-bg80.onrender.com/api/v1/user/logout",{withCredentials:true});
  
         console.log(response);
         if(response?.data?.statusCode===203){

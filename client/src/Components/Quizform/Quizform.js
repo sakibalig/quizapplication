@@ -24,7 +24,7 @@ function CreateQuiz() {
 
   const onSubmit = async (data) => {
 
-    const response = await axios.post("http://localhost:8000/api/v1/quiz/add-quiz",data,{withCredentials:true})
+    const response = await axios.post("https://quizapplication-bg80.onrender.com/api/v1/quiz/add-quiz",data,{withCredentials:true})
     console.log(response?.data);
 
     navigate('/dashboard');

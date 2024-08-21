@@ -10,7 +10,7 @@ const [quizes,setQuizes]=useState([]);
     useEffect(() => {
         const getQuizes = async () => {
             try {
-                const res = await axios.get("http://localhost:8000/api/v1/quiz/all-quizes", { withCredentials: true });
+                const res = await axios.get("https://quizapplication-bg80.onrender.com/api/v1/quiz/all-quizes", { withCredentials: true });
                 console.log("Server response:", res);
     
                 if (res.data) {
