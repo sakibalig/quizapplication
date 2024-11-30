@@ -47,7 +47,7 @@ const Mobilenav = () => {
     useEffect(()=>{
         async function getUserdetail(){
 
-            const response = await axios.get("http://localhost:8000/api/v1/user/profile",{withCredentials:true});
+            const response = await axios.get("https://quizapplication-bg80.onrender.com/api/v1/user/profile",{withCredentials:true});
 
             console.log(response?.data?.role);
             setUserRole(response?.data?.role);

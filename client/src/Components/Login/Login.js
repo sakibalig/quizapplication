@@ -44,7 +44,7 @@ export default function Login(){
                 </div>
                 <div className="login-form-input">
                     <label htmlFor="password">Password</label>
-                    <input type='text' id='password' name='password' 
+                    <input type='password' id='password' name='password' 
                     onChange={(e)=>{
                         setFormdata({...formdata,password : e.target.value})   
                    }}
